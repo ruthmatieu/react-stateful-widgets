@@ -69,7 +69,7 @@ export default function Counter() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: count % 2 === 0 ? 'royalBlue' : 'crimson'  /* STEP 2 */
+    color: isEven ? 'crimson' : 'royalBlue'  /* STEP 2 */
   };
 
   return (
