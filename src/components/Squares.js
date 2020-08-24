@@ -23,7 +23,7 @@ export default function Squares() {
   // Use the state hook twice, as we need two slices of state: 'squares' and
   // 'activeSquare'. One holds the _array_ of square ids, and the other keeps track
   // of the currently active square (if any).
-  const [squares, setSquares] = useState(listOfSquareIds);
+  const [squares] = useState(listOfSquareIds);
   const [activeSquare, setActiveSquare] = useState('');
 
   const getClassName = id => {
